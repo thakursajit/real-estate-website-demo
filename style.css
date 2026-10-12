@@ -1,0 +1,175 @@
+
+/* BASIC RESET */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #24332d;
+  background-color: #f7f6f2;
+  line-height: 1.6;
+}
+
+/* NAVIGATION */
+header {
+  background-color: #142d26;
+  padding: 18px 8%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  color: #f0d49a;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #f0d49a;
+}
+
+/* HERO SECTION */
+.hero {
+  background-color: #142d26;
+  color: white;
+  padding: 90px 8% 100px;
+}
+
+.eyebrow {
+  color: #f0d49a;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  max-width: 750px;
+  margin: 20px 0;
+  font-size: clamp(36px, 5vw, 62px);
+  line-height: 1.1;
+}
+
+.hero-text {
+  max-width: 600px;
+  color: #d9e2dc;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.button {
+  display: inline-block;
+  padding: 13px 24px;
+  border-radius: 6px;
+  background-color: #e1c17e;
+  color: #142d26;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #f0d49a;
+}
+
+/* SERVICES */
+.services {
+  padding: 75px 8%;
+}
+
+.services h2,
+.contact h2 {
+  font-size: 32px;
+  margin-top: 0;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 32px;
+}
+
+.service-card {
+  padding: 26px;
+  background-color: white;
+  border: 1px solid #e5e5dc;
+  border-radius: 12px;
+}
+
+.service-card h3 {
+  color: #173d30;
+  margin-top: 0;
+}
+
+/* CONTACT */
+.contact {
+  margin: 0 8% 70px;
+  padding: 45px;
+  background-color: #e9eee8;
+  border-radius: 12px;
+}
+
+/* FOOTER */
+footer {
+  padding: 22px 8%;
+  background-color: #142d26;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 700px) {
+  header {
+    padding: 18px 5%;
+  }
+
+  nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    padding: 65px 5%;
+  }
+
+  .services {
+    padding: 55px 5%;
+  }
+
+  .service-list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    margin: 0 5% 45px;
+    padding: 28px;
+  }
+}
