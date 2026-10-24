@@ -881,5 +881,48 @@ nav {
 }
 
 
+/* Clickable project layout plan */
+.project-plan-container {
+  height: 360px;
+  background-color: #ffffff;
+}
+
+.project-plan-container > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: zoom-in;
+}
+
+.project-image img.project-plan-image {
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  object-fit: contain;
+  object-position: center;
+  background-color: #ffffff;
+}
+
+.image-hint {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  z-index: 2;
+  margin: 0;
+  padding: 7px 10px;
+  border-radius: 5px;
+  background-color: rgba(20, 45, 38, 0.9);
+  color: #ffffff;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+@media (max-width: 700px) {
+  .project-plan-container {
+    height: 280px;
+  }
+}
+
+
 }
 
