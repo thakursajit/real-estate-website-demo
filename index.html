@@ -271,8 +271,6 @@
   </div>
 </section>
 
-
-
 <section id="contact" class="contact">
   <div class="contact-content">
     <p class="eyebrow">LET'S CONNECT</p>
@@ -283,14 +281,62 @@
       start a conversation.
     </p>
 
-    <a
-      class="button contact-button"
-      href="https://wa.me/917776064111?text=Hello%2C%20I%20would%20like%20to%20discuss%20a%20property%20opportunity."
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Enquire on WhatsApp →
-    </a>
+    <form id="enquiry-form" class="enquiry-form">
+      <div class="form-group">
+        <label for="enquiry-name">Your Name</label>
+        <input
+          type="text"
+          id="enquiry-name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="enquiry-phone">Phone Number</label>
+        <input
+          type="tel"
+          id="enquiry-phone"
+          name="phone"
+          placeholder="Enter your phone number"
+          inputmode="tel"
+          pattern="[0-9+() -]{8,20}"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="enquiry-type">I'm interested in</label>
+        <select id="enquiry-type" name="interest" required>
+          <option value="">Select an enquiry type</option>
+          <option value="Residential Plots">Residential Plots</option>
+          <option value="Property Investment">Property Investment</option>
+          <option value="Land Development">Land Development</option>
+          <option value="Joint Development Partnership">
+            Joint Development Partnership
+          </option>
+          <option value="Other Property Enquiry">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="enquiry-message">Message (optional)</label>
+        <textarea
+          id="enquiry-message"
+          name="message"
+          rows="3"
+          placeholder="Tell us what you're looking for"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="button contact-button">
+        Send Enquiry on WhatsApp →
+      </button>
+      <p class="form-note">
+        Your enquiry will open in WhatsApp for you to review and send.
+      </p>
+    </form>
   </div>
 
   <div class="contact-side">

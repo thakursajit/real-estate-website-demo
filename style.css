@@ -923,6 +923,108 @@ nav {
   }
 }
 
+}
+/* WHATSAPP ENQUIRY FORM */
+.enquiry-form {
+  display: grid;
+  gap: 18px;
+  margin-top: 28px;
+  max-width: 560px;
+}
 
+.form-group {
+  display: grid;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #f0d49a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  padding: 13px 14px;
+  border: 1px solid rgba(225, 193, 126, 0.5);
+  border-radius: 7px;
+  background: #f8f7f3;
+  color: #17352a;
+  font: inherit;
+  font-size: 15px;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: 2px solid #e1c17e;
+  outline-offset: 2px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.enquiry-form .contact-button {
+  justify-self: start;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+
+.form-note {
+  margin: 0;
+  color: #d9e2dc;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .enquiry-form {
+    max-width: none;
+  }
+
+  .enquiry-form .contact-button {
+    width: 100%;
+    justify-self: stretch;
+  }
+}
+
+/* Enquiry form controls — final override */
+#enquiry-form .form-group input,
+#enquiry-form .form-group select,
+#enquiry-form .form-group textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid rgba(225, 193, 126, 0.5);
+  border-radius: 7px;
+  background: #f8f7f3;
+  color: #17352a;
+  font: inherit;
+  font-size: 15px;
+}
+
+#enquiry-form .form-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+#enquiry-form .form-group label {
+  color: #f0d49a;
+  font-weight: 600;
 }
 
